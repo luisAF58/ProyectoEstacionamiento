@@ -2,8 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #f5f7fb;
+  --foreground: #111827;
+
+  --card: #ffffff;
+  --card-foreground: #111827;
+
+  --primary: #6366f1;
+  --primary-foreground: #ffffff;
+
+  --muted: #e5e7eb;
+  --muted-foreground: #6b7280;
+
+  --border: #d1d5db;
+
+  --available: #22c55e;
+  --occupied: #ef4444;
+
+  --shadow-card: 0 4px 12px rgba(0,0,0,0.08);
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-card {
+  background: var(--card);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.text-available {
+  color: var(--available);
+}
+
+.text-occupied {
+  color: var(--occupied);
+}
+
+.border {
+  border: 1px solid var(--border);
+}
+
+.bg-primary {
+  background: var(--primary);
+}
+
+.text-primary-foreground {
+  color: var(--primary-foreground);
 }
