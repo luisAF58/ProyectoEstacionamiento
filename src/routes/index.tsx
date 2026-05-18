@@ -53,7 +53,7 @@ function useConfig() {
   return { cfg, save };
 }
 
-function Dashboard() {
+export default function Dashboard() {
   const { cfg, save } = useConfig();
   const isDemo = !cfg.channelId;
 
