@@ -1,64 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #f5f7fb;
-  --foreground: #111827;
-
-  --card: #ffffff;
-  --card-foreground: #111827;
-
-  --primary: #6366f1;
-  --primary-foreground: #ffffff;
-
-  --muted: #e5e7eb;
-  --muted-foreground: #6b7280;
-
-  --border: #d1d5db;
-
-  --available: #22c55e;
-  --occupied: #ef4444;
-
-  --shadow-card: 0 4px 12px rgba(0,0,0,0.08);
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
-.bg-card {
-  background: var(--card);
+.shadow-\[var\(--shadow-card\)\] {
+  box-shadow: var(--shadow-card);
 }
 
-.text-foreground {
-  color: var(--foreground);
+.grid {
+  display: grid;
 }
 
-.text-muted-foreground {
-  color: var(--muted-foreground);
+.gap-2 {
+  gap: 0.5rem;
 }
 
-.text-available {
-  color: var(--available);
+.gap-3 {
+  gap: 0.75rem;
 }
 
-.text-occupied {
-  color: var(--occupied);
+.p-4 {
+  padding: 1rem;
 }
 
-.border {
-  border: 1px solid var(--border);
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.bg-primary {
-  background: var(--primary);
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.text-primary-foreground {
-  color: var(--primary-foreground);
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
