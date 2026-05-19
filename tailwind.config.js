@@ -10,25 +10,30 @@ export default {
   theme: {
     extend: {
       colors: {
-        border: "var(--border)",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        border: "hsl(var(--border))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
 
-        card: "var(--card)",
-        "card-foreground": "var(--card-foreground)",
+        card: "hsl(var(--card))",
+        "card-foreground": "hsl(var(--card-foreground))",
 
-        primary: "var(--primary)",
-        "primary-foreground": "var(--primary-foreground)",
+        primary: "hsl(var(--primary))",
+        "primary-foreground": "hsl(var(--primary-foreground))",
 
-        muted: "var(--muted)",
-        "muted-foreground": "var(--muted-foreground)",
+        muted: "hsl(var(--muted))",
+        "muted-foreground": "hsl(var(--muted-foreground))",
 
-        available: "var(--available)",
-        occupied: "var(--occupied)",
+        available: "hsl(var(--available))",
+        occupied: "hsl(var(--occupied))",
+      },
+
+      borderRadius: {
+        xl: "var(--radius)",
+        "2xl": "calc(var(--radius) + 4px)",
       },
 
       boxShadow: {
-        card: "var(--shadow-card)",
+        card: "0 4px 16px rgba(0,0,0,0.08)",
       },
     },
   },
