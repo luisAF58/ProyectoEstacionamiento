@@ -146,7 +146,7 @@ export default function Dashboard() {
         </div>
       </header>
 
-      <section className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <section className="stats-grid">
         <StatTile label="Espacios totales" value={SPACE_COUNT} />
         <StatTile label="Disponibles" value={availableCount} accent="available" />
         <StatTile label="Ocupados" value={occupiedCount} accent="occupied" />
@@ -173,7 +173,7 @@ export default function Dashboard() {
             Actualización cada {REFRESH_MS / 1000}s
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="spaces-grid">
           {readings.map((r) => (
             <ParkingSpaceCard key={r.id} reading={r} />
           ))}
@@ -187,7 +187,7 @@ export default function Dashboard() {
             Basado en las ultimas {query.data?.feeds.length ?? 0} actualizaciones
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="spaces-grid">
           {stats.map((s) => (
             <OccupancyChart
               key={s.id}
@@ -224,7 +224,7 @@ function StatTile({
         ? "text-occupied"
         : "text-foreground";
   return (
-    <div className="rounded-2xl border bg-card p-4 shadow-[var(--shadow-card)]">
+    <div className="card">
       <p className="text-xs uppercase tracking-wider text-muted-foreground">
         {label}
       </p>
