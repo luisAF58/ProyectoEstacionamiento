@@ -1,44 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ["class"],
+
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
 
-  safelist: [
-    "grid",
-    "grid-cols-1",
-    "grid-cols-2",
-    "grid-cols-5",
-    "gap-2",
-    "gap-3",
-    "rounded-xl",
-    "rounded-2xl",
-    "shadow-lg",
-    "text-2xl",
-    "text-3xl",
-    "font-semibold",
-    "bg-card",
-    "text-foreground",
-    "text-muted-foreground",
-    "text-available",
-    "text-occupied",
-    "border",
-    "bg-primary",
-    "text-primary-foreground",
-    "max-w-7xl",
-    "mx-auto",
-    "p-4",
-    "px-4",
-    "py-8",
-    "mt-6",
-    "mt-8",
-    "mt-10",
-    "mt-12",
-  ],
-
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        border: "var(--border)",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+
+        card: "var(--card)",
+        "card-foreground": "var(--card-foreground)",
+
+        primary: "var(--primary)",
+        "primary-foreground": "var(--primary-foreground)",
+
+        muted: "var(--muted)",
+        "muted-foreground": "var(--muted-foreground)",
+
+        available: "var(--available)",
+        occupied: "var(--occupied)",
+      },
+
+      boxShadow: {
+        card: "var(--shadow-card)",
+      },
+    },
   },
 
   plugins: [],
