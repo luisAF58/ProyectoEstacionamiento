@@ -2,86 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #eef3f6;
+  --foreground: #111827;
+}
+
 body {
   margin: 0;
-  background: #eef2f7;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  color: #111827;
-}
-
-main {
-  max-width: 1280px;
-  margin: auto;
-  padding: 32px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 32px;
-}
-
-button {
-  border: 1px solid #d1d5db;
-  background: white;
-  padding: 10px 16px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-bottom: 40px;
-}
-
-.card {
-  background: white;
-  border-radius: 20px;
-  padding: 24px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-}
-
-.spaces-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
-}
-
-.space-card {
-  background: #dff5e8;
-  border: 1px solid #86efac;
-  border-radius: 24px;
-  padding: 20px;
-}
-
-.space-card.occupied {
-  background: #ffe4e6;
-  border-color: #fda4af;
-}
-
-.available-text {
-  color: #16a34a;
-  font-weight: bold;
-}
-
-.occupied-text {
-  color: #dc2626;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-.section-title {
-  margin-top: 48px;
-  margin-bottom: 16px;
 }

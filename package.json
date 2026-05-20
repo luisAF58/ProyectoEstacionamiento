@@ -82,7 +82,7 @@
     "path": "^0.12.7",
     "postcss": "^8.5.15",
     "prettier": "^3.7.3",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
     "vite": "^7.3.1"
